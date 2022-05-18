@@ -6,7 +6,7 @@ const Container = styled.div`
   gap: 20px;
   width: 80%;
   margin: 0 auto;
-  /* margin-top: 100px; */
+  padding-bottom: 100px;
 `
 
 const Card = styled.div`

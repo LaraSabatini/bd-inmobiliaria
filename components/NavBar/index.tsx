@@ -23,7 +23,7 @@ function Navbar() {
           )}
         </button>
         <Link href="#about-us">Nosotros</Link>
-        <Link href="/contact">Contacto</Link>
+        <Link href="#contact">Contacto</Link>
       </Links>
     </Container>
   )

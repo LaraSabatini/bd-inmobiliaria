@@ -70,6 +70,7 @@ const CardContainer = styled.div`
   width: 70%;
   margin: 0 auto;
   justify-content: space-around;
+  margin-bottom: 50px;
 `
 
 export { FilterContainer, Filter, Menu, CardContainer }
