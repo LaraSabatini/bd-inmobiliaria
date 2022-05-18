@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Link from "next/link"
-import Logo from "../Assets/logo"
+import Logo from "../Assets/Logo"
 import Arrow from "../Assets/Arrow"
 import { Container, Links, Menu, Divider } from "./styles"
 
