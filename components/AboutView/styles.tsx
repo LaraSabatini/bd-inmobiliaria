@@ -5,6 +5,11 @@ const AboutContainer = styled.div`
     width: 500px;
   }
 
+  h2 {
+    font-family: "Poppins";
+    font-weight: 500;
+  }
+
   display: flex;
   gap: 100px;
   margin: 0 auto;

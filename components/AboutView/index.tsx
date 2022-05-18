@@ -9,6 +9,7 @@ function AboutView() {
         alt="team"
       />
       <p>
+        <h2>Nosotros</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
         laudantium doloribus! Est fugiat totam commodi autem, ea aspernatur
         numquam animi vel quidem non asperiores exercitationem? Sed assumenda
