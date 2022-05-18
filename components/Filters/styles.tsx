@@ -62,4 +62,14 @@ const Menu = styled.div`
   }
 `
 
-export { FilterContainer, Filter, Menu }
+const CardContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 100px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+`
+
+export { FilterContainer, Filter, Menu, CardContainer }

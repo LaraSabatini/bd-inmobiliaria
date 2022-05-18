@@ -1,11 +1,22 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import { createContext, useState } from "react"
+import { PropertyInterface } from "../interfaces/PropertyInterface"
 
 export const FiltersContext = createContext({
   operationTypes: null,
-  operationMenu: null,
-  setOperationMenu: null,
   operationSelected: null,
   setOperationSelected: null,
+  propertyTypes: null,
+  zones: null,
+  propertySelected: null,
+  setPropertySelected: null,
+  zoneSelected: null,
+  setZoneSelected: null,
+  neighborhoods: null,
+  neighborhoodSelected: null,
+  setNeighborhoodSelected: null,
+  results: null,
+  setResults: null,
 })
 
 function FiltersContextProvider({ children }: any) {
@@ -22,20 +33,89 @@ function FiltersContextProvider({ children }: any) {
     { operation_type: "Alquiler", id: 3 },
   ]
 
-  const [operationMenu, setOperationMenu] = useState<boolean>(false)
+  const propertyTypes = [
+    {
+      property_type: "Tipo de propiedad",
+      id: 4,
+    },
+    {
+      property_type: "Departamento",
+      id: 5,
+    },
+    { property_type: "Casa", id: 6 },
+    { property_type: "Duplex", id: 7 },
+    { property_type: "PH", id: 8 },
+  ]
+
+  const zones = [
+    {
+      zone_type: "Zonas",
+      id: 100,
+    },
+    {
+      zone_type: "Capital Federal",
+      id: 9,
+    },
+    {
+      zone_type: "Cuba Fatima",
+      id: 10,
+    },
+  ]
+
+  const neighborhoods = [
+    {
+      neighborhood_type: "Barrios",
+      id: 101,
+    },
+    {
+      neighborhood_type: "Recoleta",
+      id: 11,
+    },
+    {
+      neighborhood_type: "Coghlan",
+      id: 12,
+    },
+  ]
+
   const [operationSelected, setOperationSelected] = useState<{
     operation_type: string
     id: number
   }>(operationTypes[0])
 
+  const [propertySelected, setPropertySelected] = useState<{
+    property_type: string
+    id: number
+  }>(propertyTypes[0])
+
+  const [zoneSelected, setZoneSelected] = useState<{
+    zone_type: string
+    id: number
+  }>(zones[0])
+
+  const [neighborhoodSelected, setNeighborhoodSelected] = useState<{
+    neighborhood_type: string
+    id: number
+  }>(neighborhoods[0])
+
+  const [results, setResults] = useState<PropertyInterface[]>([])
+
   return (
     <FiltersContext.Provider
       value={{
         operationTypes,
-        operationMenu,
-        setOperationMenu,
         operationSelected,
         setOperationSelected,
+        propertyTypes,
+        zones,
+        propertySelected,
+        setPropertySelected,
+        zoneSelected,
+        setZoneSelected,
+        neighborhoods,
+        neighborhoodSelected,
+        setNeighborhoodSelected,
+        results,
+        setResults,
       }}
     >
       {children}
