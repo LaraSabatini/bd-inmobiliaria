@@ -1,7 +1,8 @@
 import React from "react"
+import AboutView from "../components/AboutView"
 
 const about = () => {
-  return <div>about</div>
+  return <AboutView />
 }
 
 export default about
