@@ -3,8 +3,8 @@ import React from "react"
 function MapdotWhite() {
   return (
     <svg
-      width="30"
-      height="39"
+      width="20"
+      height="20"
       viewBox="0 0 30 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

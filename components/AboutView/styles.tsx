@@ -18,7 +18,7 @@ const AboutContainer = styled.div`
   justify-content: center;
   background: rgba(4, 21, 120, 0.4);
 
-  p {
+  div {
     width: 40%;
     font-family: "Poppins";
     font-size: 15px;

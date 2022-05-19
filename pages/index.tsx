@@ -6,6 +6,7 @@ import Search from "../components/Search"
 import Contact from "./contact"
 import About from "./about"
 import Testimonials from "../components/Testimonials"
+import Footer from "../components/Footer"
 // eslint-disable-next-line react/function-component-definition
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <About />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   )
 }
