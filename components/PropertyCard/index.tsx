@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState } from "react"
 import Surface from "../Assets/Surface"
 import Bedroom from "../Assets/Bedroom"
