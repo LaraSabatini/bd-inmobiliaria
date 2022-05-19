@@ -5,14 +5,14 @@ const Card = styled.div`
   box-shadow: 0px 8px 24px rgba(4, 21, 120, 0.2);
   border-radius: 20px;
   width: 300px;
-  height: 400px;
-  /* justify-content: space-between; */
+  height: 470px;
   font-family: "Poppins";
   cursor: pointer;
 
   img {
     width: 100%;
     border-radius: 20px 20px 0 0;
+    height: 200px;
   }
 
   .photos {
@@ -20,7 +20,7 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 144px;
+    height: 198px;
 
     p {
       margin: 0;
@@ -29,8 +29,6 @@ const Card = styled.div`
       font-weight: 700;
       font-size: 16px;
       line-height: 20px;
-      /* identical to box height */
-
       color: #929292;
     }
   }
@@ -82,7 +80,35 @@ const Card = styled.div`
     font-size: 13px;
     padding-top: 10px;
   }
+
+  .photoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
-// eslint-disable-next-line import/prefer-default-export
-export { Card }
+const ArrowContainer = styled.div`
+  position: absolute;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 50%;
+`
+
+const Arrow = styled.div`
+  background: #ffffff4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  :hover {
+    background: #ffffff83;
+  }
+`
+
+export { Card, ArrowContainer, Arrow }

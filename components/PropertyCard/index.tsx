@@ -1,8 +1,11 @@
-import React from "react"
+/* eslint-disable no-console */
+import React, { useState } from "react"
 import Surface from "../Assets/Surface"
 import Bedroom from "../Assets/Bedroom"
 import Bathroom from "../Assets/Bathroom"
-import { Card } from "./styles"
+import ArrowRight from "../Assets/ArrowRight"
+import ArrowLeft from "../Assets/ArrowLeft"
+import { Card, ArrowContainer, Arrow } from "./styles"
 
 interface CardInterface {
   photos: {
@@ -33,17 +36,62 @@ function PropertyCard({
   room_amount,
   toilet_amount,
 }: CardInterface) {
+  const [currentPhoto, setCurrentPhoto] = useState<{
+    description: string
+    image: string
+    is_blueprint: boolean
+    is_front_cover: boolean
+    order: number
+    original: string
+    thumb: string
+  }>(photos[0])
+
+  const amountOfPhotos = photos.length
+  const [counter, setCounter] = useState<number>(1)
+
+  const goNext = () => {
+    const findIndex = photos.findIndex(photo => photo === currentPhoto)
+    setCounter(counter + 1)
+    const count = counter + 1
+    if (count < amountOfPhotos) {
+      setCurrentPhoto(photos[findIndex + 1])
+    } else {
+      setCounter(amountOfPhotos)
+    }
+  }
+
+  const goPrev = () => {
+    const findIndex = photos.findIndex(photo => photo === currentPhoto)
+    setCounter(counter - 1)
+    const count = counter - 1
+    if (count > 0) {
+      setCurrentPhoto(photos[findIndex - 1])
+    } else {
+      setCounter(1)
+    }
+  }
+
   return (
     <Card>
-      <p>
+      <div className="photoContainer">
         {photos.length > 0 ? (
-          photos.map(photo => <img alt={photo.description} src={photo.image} />)
+          <>
+            <ArrowContainer>
+              <Arrow onClick={goPrev}>
+                <ArrowLeft />
+              </Arrow>
+              <Arrow onClick={goNext}>
+                <ArrowRight />
+              </Arrow>
+            </ArrowContainer>
+            <img alt={currentPhoto.description} src={currentPhoto.image} />
+          </>
         ) : (
           <div className="photos">
             <p>FOTO NO DISPONIBLE</p>
           </div>
         )}
-      </p>
+      </div>
       <div className="content">
         <div className="operationType">{operation_type}</div>
         <p className="description">{description.slice(0, 150)}...</p>

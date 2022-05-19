@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const apiURL =
-  "https://www.tokkobroker.com//api/v1/property/?lang=es_ar&format=json&key=5940ea45eb7cfb55228bec0b958ea9c0be151757"
+  "https://www.tokkobroker.com/api/v1/property/?lang=es_ar&format=json&limit=3&key=5940ea45eb7cfb55228bec0b958ea9c0be151757"
 
 const getProperties = async () => {
   const axiosHeaders = {
