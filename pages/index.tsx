@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Navbar from "../components/NavBar"
 import SectionTitle from "../components/Title"
-// import Slideshow from "../components/Slideshow"
+import Slideshow from "../components/Slideshow"
 import Search from "../components/Search"
 import Contact from "./contact"
 import About from "./about"
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Navbar />
-      {/* <Slideshow /> */}
+      <Slideshow />
       <SectionTitle text="Nuestros productos" />
       <Search />
       <About />
