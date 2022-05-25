@@ -57,6 +57,7 @@ const Divider = styled.div`
   width: 90%;
   height: 1px;
   background-color: #00000064;
+  margin: 10px 0;
 `
 
 export { Container, Links, Menu, Divider }

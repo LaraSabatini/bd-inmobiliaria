@@ -1,0 +1,1208 @@
+[
+    {
+        "id": 1,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "INES MARIA ABDALA",
+        "property_type": "Casa",
+        "batch": 247,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 200,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 4500,
+                "agent": "BC"
+            },
+            {
+                "month": "Febrero",
+                "price": 4000,
+                "agent": "BC"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1KAZVAHqaaXZ7_bCXeu1Z86sHDBEeS9Uo",
+                "alt": "First image"
+            },
+            {
+                "img": "1KGipNdzDvEp3hLxf8pX2N1mpV4y1DxxV",
+                "alt": "First image"
+            },
+            {
+                "img": "1KJBORTYPzwLAumlEDOsWFzcFckNSFMO3",
+                "alt": "First image"
+            },{
+                "img": "1KJE57Qh500HfLVUGTALkJKi24Urdonyh",
+                "alt": "First image"
+            },{
+                "img": "1KK99dusk0Ku5z6hA-QhiOlnyxPr_WkwU",
+                "alt": "First image"
+            },{
+                "img": "1KPM58AmtR7wJKDvThsux6slJCZ1ksx0i",
+                "alt": "First image"
+            },{
+                "img": "1KPjlpsAMXcFhbtXpSClgfZwARSUnLfLC",
+                "alt": "First image"
+            },{
+                "img": "1KYeXkTfPUNke1grnVnPxjBicLy6708XP",
+                "alt": "First image"
+            },{
+                "img": "1Ka8Hjfy-XOU0QpltcPnugiwQMCK-zIc1",
+                "alt": "First image"
+            },{
+                "img": "1Kb1LXmDzcoLPSXQlt2YJnmIe2UGQfkhc",
+                "alt": "First image"
+            },{
+                "img": "1Kbea7e3Ajb7ZJ-2lUnfe-1-e-wC5yNMQ",
+                "alt": "First image"
+            },{
+                "img": "1KdwDcVJrsnXzBWcdJDBrIYaEVCHV1LOv",
+                "alt": "First image"
+            },{
+                "img": "1KeeLk8TRdPDw1fMUr-XauMAom5ynRTi9",
+                "alt": "First image"
+            },{
+                "img": "1KiP4607srNl2UnSk_tH3-N6pu6TDqJLY",
+                "alt": "First image"
+            },{
+                "img": "1KmqXq1IjPWmDiHpQxg3k5YfjYXyqHXdP",
+                "alt": "First image"
+            },{
+                "img": "1KnQckGCRXLIyoXNE6ol9AN2IdmDEjnh-",
+                "alt": "First image"
+            },{
+                "img": "1KoR-FUG0wL4FCjlb09MKUjwY76SrMwwI",
+                "alt": "First image"
+            },{
+                "img": "1Kq1sGHa0Dl9-9h3ouRrt7m_A-qrM9lZo",
+                "alt": "First image"
+            },{
+                "img": "1Kq5wsw8YIQ6auuUvagKVpgZJSueVR38S",
+                "alt": "First image"
+            },{
+                "img": "",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "active": true,
+        "observations": "-",
+        "description": "CUBA I - Casa en 2 plantas. Planta baja: Living comedor, playroom, toilet, cocina con comedor diario, lavadero. Planta alta: 1 dormitorio en suite con AA, 3 dormitorios con AA, baño completo. Galería, parrilla, pileta.",
+        "operation_type": "Alquiler",
+        "owner": "CEBALLOS GUSTAVO / CAROLINA",
+        "property_type": "Casa",
+        "batch": 7,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 200,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "30/12 al 30/01",
+                "price": 3000,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1AKJk5x63LdvaM_2uU-hG046fSCwJJyB_",
+                "alt": "First image"
+            },
+            {
+                "img": "1AFAseAZC2HnVVi9BfZ0odf6PfgDoaPFd",
+                "alt": "First image"
+            },
+            {
+                "img": "1ACzI-MA8OQCSh66_pDqZvoAGGdt6J8Fl",
+                "alt": "First image"
+            },{
+                "img": "1A7rHCi81Q-lMDZrX4PbTzMXE-AjZ6GZ-",
+                "alt": "First image"
+            },{
+                "img": "1A66Je-2-a2XAJN2dIjIff5Y_BytFWvjM",
+                "alt": "First image"
+            },{
+                "img": "1A66Je-2-a2XAJN2dIjIff5Y_BytFWvjM",
+                "alt": "First image"
+            },{
+                "img": "1A4H-gNbaSBrseXMaCJwQMKPSlj0mGhe2",
+                "alt": "First image"
+            },{
+                "img": "1A4znd8z2G3XPj5RwEoLl6dy5BtOydGkZ",
+                "alt": "First image"
+            },{
+                "img": "1A-mRfNA1CJ9ZY024eer4Rr4WnhQT06ZC",
+                "alt": "First image"
+            },{
+                "img": "19hgWd5SqUf_TA2erQgVB6YfK_Y5zMKH9",
+                "alt": "First image"
+            },{
+                "img": "19eGTLAOq54t6OXm7LEekNYx0-i01zLgK",
+                "alt": "First image"
+            },{
+                "img": "19efYJ1cdWMalWRGQxFIPHyGMTccSSMuq",
+                "alt": "First image"
+            },{
+                "img": "19cvhuK8x9U4zo9g4wtQ1HxImhFR1TqDP",
+                "alt": "First image"
+            },{
+                "img": "19afTiR16pYlExpdRhcguvw2qCwbDFruR",
+                "alt": "First image"
+            },{
+                "img": "19Zwq4yrhplYeg2vQn6_r-GqEbhEVW02f",
+                "alt": "First image"
+            },{
+                "img": "19Y5MT6LAQvpy40ELtbJ5wxVZHClvJyaK",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "DE VERA DIEGO/MERCEDES",
+        "property_type": "Casa",
+        "batch": 320,
+        "sector": 1,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 170,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "2da quincena de Enero",
+                "price": 1600,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1QGvlGGajkbzXTCYWm2lU2feu980sFDnQ",
+                "alt": "First image"
+            },{
+                "img": "1QFX_A2y-vC1DAqkX9mag4YyZ3FlSEGVF",
+                "alt": "First image"
+            },{
+                "img": "1QEz53hou124t9YYNzCDhvB0ZO_VbBYWr",
+                "alt": "First image"
+            },
+            {
+                "img": "1QBy5IlzHXJ7ztmky2hE948FKec-DNKMN",
+                "alt": "First image"
+            },
+            {
+                "img": "1Q5Cbl2_gQL7nUpRIynNn5MxnrlVTTwKO",
+                "alt": "First image"
+            },{
+                "img": "1Q4tDouDYbH9co_HghndpuO3zVgQiiFIy",
+                "alt": "First image"
+            },{
+                "img": "1Pgz8-Gf91pSJeWC4_f2701PQAvTfCs6F",
+                "alt": "First image"
+            },{
+                "img": "1PepakjaYtFV9xevec20Vi3ldm5eydyJ8",
+                "alt": "First image"
+            },{
+                "img": "1PWziKutu8o3jZNq3gNphmxYerEzlwJ8p",
+                "alt": "First image"
+            },{
+                "img": "1PPwYyeKnl29jo-z2hBskbd_M-IxFQpfk",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "active": true,
+        "observations": "-",
+        "description": "CUBA II -  Living comedor, estar, cocina con lavavajillas y dos heladeras, toilet, dormitorio principal con vestidor y baño AAC, 3 dormitorios con AAC y dos baños completos, dependencia, galería, pileta, parrilla y vestuario.",
+        "operation_type": "Alquiler",
+        "owner": "FRÍAS RICARDO / PAYA",
+        "property_type": "Casa",
+        "batch": 41,
+        "sector": 2,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 260,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 3300,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1hmmEttY6qQBO_iCEhjU4puEncvJiDr9V",
+                "alt": "First image"
+            },
+            {
+                "img": "1hkbb-kIn7j_NlD3oRePUn37kNeHGh7P0",
+                "alt": "First image"
+            },{
+                "img": "1hfLIKUjrfXgAOs3j0m86SsEJwFHnhSNe",
+                "alt": "First image"
+            },{
+                "img": "1heFEFufHOcZ5Wm57AyCENMpPnFicNcWP",
+                "alt": "First image"
+            },{
+                "img": "1h_dXJHGnB_kuCOYnN96Ay_DfZ4W5B35B",
+                "alt": "First image"
+            },{
+                "img": "1hPH77r_VJpaXv42hJCTGo09mgmnyQTU-",
+                "alt": "First image"
+            },{
+                "img": "1hGwcf2KtwfnZCO8ON4V8NP4bDg_qXWI6",
+                "alt": "First image"
+            },{
+                "img": "1hAVrUXjLu7MOXPvEJSrEHfnzc1BRF-w9",
+                "alt": "First image"
+            },{
+                "img": "1h8CAnfdSgssBiWFgkQtJLKAx_rCz4Lam",
+                "alt": "First image"
+            },{
+                "img": "1h5uKo3tjb2OAwqlhhhRBo224-fu9p1BR",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "G.GUERRICO EXEQUIEL / GLORIA",
+        "property_type": "Casa",
+        "batch": 254,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 170,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 3000,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1-5wpAcR19M7-gieN5aKQn15Ze0hvJ-0q",
+                "alt": "First image"
+            },
+            {
+                "img": "1-8yazAKDnJoY09z0a7tPaQfUtN74LyYl",
+                "alt": "First image"
+            },{
+                "img": "1-Aq3cTEi6qZSvbM8AY3Tj2mK_uFkqsHB",
+                "alt": "First image"
+            },{
+                "img": "1-AweXpt4V9iEs72FoFGpAG2biamVxrpM",
+                "alt": "First image"
+            },{
+                "img": "1-BapZ6HTdvPCtSPBU3Wk80CXqrhpISQ4",
+                "alt": "First image"
+            },{
+                "img": "1-DvlHu5q-Sa8lNM_t-Rs-N0QueAc-Y1f",
+                "alt": "First image"
+            },{
+                "img": "1-EwGZJR4R2uMwVFP4JOMqiEE1EXxtaHl",
+                "alt": "First image"
+            },{
+                "img": "1-FyTztUDF41ak1YL9-RvpbpYtE-tkDde",
+                "alt": "First image"
+            },{
+                "img": "1-GN8f5KOaUUxEQuC5uS-hokPd6SFbK91",
+                "alt": "First image"
+            },{
+                "img": "1-IDVntOewuGGyQfhhtVh292FSZr-GLwW",
+                "alt": "First image"
+            },
+            {
+                "img": "1-JMd6x2jLGOVZS6JabvtcuV2SoURugRJ",
+                "alt": "First image"
+            },{
+                "img": "1-QGTglDKLQwTqx5n2GckR6FTP_frj5BB",
+                "alt": "First image"
+            },{
+                "img": "1-QWRHNP9W4zZ8n6OoODYIPB4Xqgcw14z",
+                "alt": "First image"
+            },{
+                "img": "1-Qcdkk7f0DS3HTWdSYrpDFnEzV-NuHkK",
+                "alt": "First image"
+            },{
+                "img": "1-RDxofVXYcdZDimpG8Asj-vD6LmAr4Z8",
+                "alt": "First image"
+            },{
+                "img": "1-RNKYqpqU9gUajN_sHORciXTWxHyHY04",
+                "alt": "First image"
+            },{
+                "img": "1-XGqVy-wQtbStr1GdeApfpETsl1dikwu",
+                "alt": "First image"
+            },
+            {
+                "img": "1-Y5v6iRLDwjcVHcgIxl6EttyNpnyMLCQ",
+                "alt": "First image"
+            },{
+                "img": "1-g0gKUZB3dr-4NQCV9L0vBGtBMz6SabB",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "LEZA ANA / CONSUELO",
+        "property_type": "Casa",
+        "batch": 102,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": true,
+        "meters_covered": 190,
+        "meters_batch": 1100,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 3000,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1A2gMpNPccB4nB92pjb5Ykq1uS9hC9Et4",
+                "alt": "First image"
+            },
+            {
+                "img": "1AHhTd9gB5qNFsFrV4UZsGeD4Xe18YuXV",
+                "alt": "First image"
+            },{
+                "img": "1ACWKBT2t_3wRDS7ZCD3cxVLkCWns_QhX",
+                "alt": "First image"
+            },{
+                "img": "1ANEDBuVrgI4ulE7MpZ9vvX9QX4HKH47s",
+                "alt": "First image"
+            },{
+                "img": "1AMeWtHpWtiIrOfHxQbM6DBzXB_X7UhZM",
+                "alt": "First image"
+            },{
+                "img": "1ALHc5XtyAwZRUvgEo1Rwr1nMHLTbt6fk",
+                "alt": "First image"
+            },{
+                "img": "1Abgko4Gd6Kg6X8DDjzIxVL1B6DPIcde3",
+                "alt": "First image"
+            },{
+                "img": "1AgZMl64pzO5Q0pU56Ue6vylEIVF0DCrb",
+                "alt": "First image"
+            },{
+                "img": "1AT6pzaPexHcMPIcF6tKQoKvhMesqi2H1",
+                "alt": "First image"
+            },{
+                "img": "1Ap2r4_V4KQV75OQ-HBZDItHfHIfOd-lf",
+                "alt": "First image"
+            },{
+                "img": "1AhchpdoSOVgN6CGyG7wDOkGCauaPHcoJ",
+                "alt": "First image"
+            },{
+                "img": "1AJyrgSZV7-Gjfuot5gDYyyyE7KxL1NMo",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "active": true,
+        "observations": "-",
+        "operation_type": "Alquiler",
+        "description": "CUBA I - Casa en dos plantas. Living, comedor, cocina comedor diario, estar, dependencia, lavadero, suite principal, 3 dormitorios con dos baños. Galería, pileta, parrilla. AAC living comedor, suite. Calefacción por piso radiante",
+        "owner": "LUCHI ROBERTO / MÓNICA",
+        "property_type": "Casa",
+        "batch": 270,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": true,
+        "meters_covered": 220,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 4700,
+                "agent": "DP"
+            },
+            {
+                "month": "Febrero",
+                "price": 4300,
+                "agent": "DP"
+            }
+        ],
+        "photos": [{
+            "img": "17GRPUxNcjJxLAvzkZq9wgShQT6K5TDk4",
+            "alt": "First image"
+        },
+        {
+            "img": "17EK1SWUcD4Qlwhf6hKDxKmfT9NvrjO_W",
+            "alt": "First image"
+        },{
+            "img": "179_S7ikx8H_x-dumizBhRta_4G1J7snC",
+            "alt": "First image"
+        },{
+            "img": "178945onfgaDPQnv6URrYykIF4Pp7qTSD",
+            "alt": "First image"
+        },{
+            "img": "176Rif0lRCOL5py0EhkQD-JKkx-6Lk2ZD",
+            "alt": "First image"
+        },{
+            "img": "173l2Wakl2RXQb7KKBgXLqN61BE4KSUUo",
+            "alt": "First image"
+        },{
+            "img": "171qELkw45oHqvZ14VZL1sUlPLNU8aCGA",
+            "alt": "First image"
+        },{
+            "img": "16shnlH2YYnoyfPQwHEel9KEIMNIuxxLz",
+            "alt": "First image"
+        },{
+            "img": "16rBsAr-tBqMhoXp3DiEldKNteNiNvbD_",
+            "alt": "First image"
+        },{
+            "img": "16obSHldV0r5QVKsrIecB0eS-nbSbeowm",
+            "alt": "First image"
+        },{
+            "img": "16k2zwmd4DxJUVhOOU1Vod2VHpxNphakR",
+            "alt": "First image"
+        },{
+            "img": "16g-dF66K1F3J-WWMEgaSHCPv5PaWCPSG",
+            "alt": "First image"
+        }
+    ]
+    },
+    {
+        "id": 8,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "MASSOT RICARDO / MÓNICA",
+        "property_type": "Casa",
+        "batch": 116,
+        "sector": 2,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 220,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 4000,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1QUA4CyGIYS-2eOJNtpaI5IJr1CSQkfQT",
+                "alt": "First image"
+            },
+            {
+                "img": "1Q7q86BFrgkTrGzX58q8WQeRF9OsiIKhh",
+                "alt": "First image"
+            },{
+                "img": "1QPj0AWPlxDcS1j5U4_jXK33bG2wEOx_3",
+                "alt": "First image"
+            },{
+                "img": "1QiB1DpFk4kQiC-YoJH31CKnp1dmlETio",
+                "alt": "First image"
+            },{
+                "img": "1QNSW2cUxDlCEhHxpoU5jZWKiKFqT2M7m",
+                "alt": "First image"
+            },{
+                "img": "1QflMKx6Wrh6-FhoZU9PzswkgvDcVK9XR",
+                "alt": "First image"
+            },{
+                "img": "1QAaUWsy7ef1LuCWyli5szATF2bi_CGbP",
+                "alt": "First image"
+            },{
+                "img": "1QtVCKlLgBdMqLAkWMlE-9kBjHdZ9eZJa",
+                "alt": "First image"
+            },{
+                "img": "1QPzw7b9dua1FuA3n2dhI4NDXA_VLIuVg",
+                "alt": "First image"
+            },{
+                "img": "1QlcXFP4is6GF8U70xXuQf8sQp3HWmnyv",
+                "alt": "First image"
+            },{
+                "img": "1QExkPpN4I4QkjDo-v_PN6zgC94ZhlHE_",
+                "alt": "First image"
+            },{
+                "img": "1QdcP4I2xpIGLl0iGZ5PiiyDqInQqpS0N",
+                "alt": "First image"
+            },{
+                "img": "1QCPaIHpU_70CNs3cNyeRoLak7FwxzF41",
+                "alt": "First image"
+            },{
+                "img": "1QcWMCdbj5QroaBmdBnwhd2HWZFZuNAOx",
+                "alt": "First image"
+            },{
+                "img": "1QcWMCdbj5QroaBmdBnwhd2HWZFZuNAOx",
+                "alt": "First image"
+            },{
+                "img": "1Qe4K-YR4wYaIAiB2xeF4dOnSkDaxAmiL",
+                "alt": "First image"
+            },{
+                "img": "1QGarqEDj06JpR0-Ufj7JTMkdyl48JRML",
+                "alt": "First image"
+            },{
+                "img": "1Qddj8db4uRFqmxjCLaH3XYPwWPTPl8nT",
+                "alt": "First image"
+            },{
+                "img": "1Q9Y54FJg_2jibQ-DHRP6AWqSKeq01fcT",
+                "alt": "First image"
+            },{
+                "img": "1QWapCSNlE0pbUAT6Up5i3d2VlJUFl18A",
+                "alt": "First image"
+            },{
+                "img": "1Q9BzCGfElCMh9pw9GFAWDlOH-o3Z7neJ",
+                "alt": "First image"
+            },{
+                "img": "1QW2Kj0QCXRSo9VmYyP_mtLamfqDo7ZQz",
+                "alt": "First image"
+            },{
+                "img": "1Q6tmnJJZfVoW6d8VcS1caMFlJF2wZHLf",
+                "alt": "First image"
+            },{
+                "img": "1Qa8yC_tALSREHDlSiPFt80IgevDorWMb",
+                "alt": "First image"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "MOLINA CONSUELO",
+        "property_type": "Casa",
+        "batch": 125,
+        "sector": 2,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 190,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 3200,
+                "agent": "DP"
+            }
+        ],
+        "photos": []
+    },
+    {
+        "id": 10,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "PIERRE ANA / ALEJANDRO",
+        "property_type": "Casa",
+        "batch": 323,
+        "sector": 1,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 200,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "1ra quincena de Enero",
+                "price": 3300,
+                "agent": "BC"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1-6N5gdkGJJm2Krpi6qFWOvaoObvz01uU",
+                "alt": ""
+            },
+            {
+                "img": "1ddg8WoVe6yuCxLmhbiq5l7qLWkXxfEiz",
+                "alt": ""
+            },{
+                "img": "1zyvkYdGCbbdVzZITHSAVN3U9QoISXhLa",
+                "alt": ""
+            },{
+                "img": "1zhx7RxIp3wbA0hyAEiVT2p4lTkAz7AaH",
+                "alt": ""
+            },{
+                "img": "1zbITAnumuVf6U-nHDxtplso1sHXEQfxx",
+                "alt": ""
+            },{
+                "img": "1zQsQXoEV0EeZER3bUCNaBIxzmhnlYYC3",
+                "alt": ""
+            },{
+                "img": "1zIyLEZKlecM7JYYueGwkw-js08PWYEvs",
+                "alt": ""
+            },{
+                "img": "1zF5NrXehJx9jPsBwsE11v0cs9PSpCGtm",
+                "alt": ""
+            },{
+                "img": "1z8plqRkDjyMl8-JH9-S6bloqMfky2nwp",
+                "alt": ""
+            },{
+                "img": "1z25IQzFI9X3f1iU_kFkr5dvHGSusrhmh",
+                "alt": ""
+            },{
+                "img": "1ywTQNhuFy8erefBWkmEREsuhMDyWfby6",
+                "alt": ""
+            },{
+                "img": "1ysHXebsbUAhPTsYmT8-rbNvRLI5-qQcm",
+                "alt": ""
+            },{
+                "img": "1yjTEgg_R8rRB1thpwrFR-WwB-9vNkEup",
+                "alt": ""
+            },{
+                "img": "1QWn2frlOlScDKoGlTCpu5-zuN0ZXvH0L",
+                "alt": ""
+            },
+            {
+                "img": "12aAtKXNG8eefeTpa_ESgV3Hl1Q4CZ2PP",
+                "alt": ""
+            },{
+                "img": "1BiPefMjOJo0JGtGZCqWOijYd63Q65jGC",
+                "alt": ""
+            },{
+                "img": "1dNNfy8ePs7ynzytuvKLoDGMJcjt2-zgs",
+                "alt": ""
+            },{
+                "img": "1DeICeY7dTxtuOtOm3KF75tGE3kGKCRCk",
+                "alt": ""
+            },{
+                "img": "18HUi5OQBlpWJZqjz7lvdkGLHUbTlU2qu",
+                "alt": ""
+            },{
+                "img": "1nVM6pSCXDGQkae3etd2ULg4MLECjPjZj",
+                "alt": ""
+            },{
+                "img": "1jyuBtdngeC5PYhNFkx9lFJrZOaniTwaD",
+                "alt": ""
+            },{
+                "img": "1L32Qz2Y8OoSITjIcT8OmsZEQtSpM30vV",
+                "alt": ""
+            },{
+                "img": "15TsWo6dsuRv5tD3sFSqlBNzxwvDf9bUy",
+                "alt": ""
+            }
+        ]
+
+    },
+    {
+        "id": 11,
+        "active": true,
+        "observations": "No mascotas",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "ROSSI",
+        "property_type": "Casa",
+        "batch": 0,
+        "sector": 1,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 200,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "Febrero",
+                "price": 4000,
+                "agent": "BC"
+            }
+        ],
+        "photos": []
+    },
+    {
+        "id": 12,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "TENAILLÓN RITA / ALBERTO",
+        "property_type": "Casa",
+        "batch": 81,
+        "sector": 2,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 170,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "15/03 al 15/12",
+                "price": 1600,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1rQdHvlN0KEBh2GeyOO5cLtNRITpwjKdc",
+                "alt": ""
+            },
+            {
+                "img": "1r28tNvUDmSJmysIBYCvKWT4wwlvy5DSg",
+                "alt": ""
+            },{
+                "img": "1r2ZiKm2n6387_FUfMxatPBAYckCTc9pX",
+                "alt": ""
+            },{
+                "img": "1quVq5QSeNO2mEmTrhHZlNRXbWhiJKtO0",
+                "alt": ""
+            },{
+                "img": "1qvEUeZn9dk_87gbQ710B3IRjPnUvR10Q",
+                "alt": ""
+            },{
+                "img": "1r75V5aqxWfdsPzMoZIj2q9Lu6c51oSg2",
+                "alt": ""
+            },{
+                "img": "1r84OFVvTPrO0LJqj-CaU_ceIv1j6017d",
+                "alt": ""
+            },{
+                "img": "1r3H5BiS4MzAvgTkvnD2sZ3THszNu1ALf",
+                "alt": ""
+            },{
+                "img": "1r5E1_3hV_ZOliV7VWVfw5kNaboD5tA2V",
+                "alt": ""
+            },{
+                "img": "1qfC-KBA7s_IGT8bJuIxc62Pqg2r_OSGv",
+                "alt": ""
+            },{
+                "img": "1qgCFWilHPitbugYuZYcgmC-mGCh_hQSH",
+                "alt": ""
+            },{
+                "img": "1qVIuw3PvXBnyr_XD-GtMT5bpXiwGRQJ5",
+                "alt": ""
+            },{
+                "img": "1qh0KwOyaLbwH-2fnUO15NjuzdnTJILuD",
+                "alt": ""
+            },{
+                "img": "1qjTEIDZ-d_f-R1YrWnUGalyuJ06Jlzd9",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "TROULLI GERALDINE",
+        "property_type": "Casa",
+        "batch": 187,
+        "sector": 2,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 250,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "15/01 al 31/01",
+                "price": 3500,
+                "agent": "BC"
+            }
+        ],
+        "photos": []
+    },
+    {
+        "id": 14,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "YMAZ JORGE / CAROLA",
+        "property_type": "Casa",
+        "batch": 325,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": false,
+        "pool": true,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 120,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "01 al 08/02",
+                "price": 1200,
+                "agent": "DP"
+            }
+        ],
+        "photos": []
+    },
+    {
+        "id": 15,
+        "active": false,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "ZANCHETTI MARCELO",
+        "property_type": "Casa",
+        "batch": 172,
+        "sector": 2,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "toilette": true,
+        "pool": true,
+        "barbacue": true,
+        "playroom": true,
+        "dependency": true,
+        "meters_covered": 230,
+        "meters_batch": 1000,
+        "time_periods": [
+            {
+                "month": "01/02 al 20/02",
+                "price": 3000,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "18nasdJNbC7hr_7R2MOMRb0f_WrovuLZ5",
+                "alt": ""
+            },
+            {
+                "img": "18nVFvvdxqmvN0XBMvHA5Pan8M8WngL_j",
+                "alt": ""
+            },{
+                "img": "18nJQigrZFCWqsq2WgJ2fSdmNgUhXT3qx",
+                "alt": ""
+            },{
+                "img": "18n7x3Q4fnWObsfRJTn0HqJdJJE7BCoXM",
+                "alt": ""
+            },{
+                "img": "194uFo0O3dtejvjoNfpC-WRuKVGvma-9S",
+                "alt": ""
+            },{
+                "img": "18nGRO8uoWfQtG-cSzY1rI7kzaBAdKUrr",
+                "alt": ""
+            },{
+                "img": "193OrYe2-x5wf8zxBzoA4hLqQ3dnMsjD8",
+                "alt": ""
+            },{
+                "img": "1928LNbtnxhTQZtOTCrCp-Au1pYTbSH2C",
+                "alt": ""
+            },{
+                "img": "191UxOCrPrAzNhknpfM_GMlljh6fy6PfZ",
+                "alt": ""
+            },{
+                "img": "18yJ4rVYRXzaRMbZO7pyqrDdCYhxlBur_",
+                "alt": ""
+            },{
+                "img": "18sp193VAfWY9BdCkwzC7HbdktfmqL_Cm",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "active": true,
+        "observations": "-",
+        "description": "CUBA I - 3 DORMITORIOS UN BAÑO TOILET IMPECABLE ESTADO. Excelente dormi en CUBA I. Planta baja, living comedor con AAC, cocina americana, toilet, galeria y parrilla. Planta alta, dormitorio principal con AAC, 2do dormitorio con AAC, 3er dormitorio con ventilador de techo.",
+        "operation_type": "Alquiler",
+        "owner": "AHUAD ANDRÉS / ANDREA",
+        "property_type": "Dormi",
+        "batch": 5,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "toilette": true,
+        "pool": false,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 80,
+        "meters_batch": 100,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 1200,
+                "agent": "BC"
+            }
+        ],
+        "photos": [
+            {
+                "img": "16rdiZI_EdZ51brN-VH0ZWjkpCS3ndEof",
+                "alt": ""
+            },
+            {
+                "img": "16rQaO6ebVZDwts84srkEiKuU3HksJEPc",
+                "alt": ""
+            },{
+                "img": "16iWyTUrXF41Fu6drsItfuapQF1cZvCtt",
+                "alt": ""
+            },{
+                "img": "16fIBhSk9OTEkePXiryc_J6FTDGOMxIh6",
+                "alt": ""
+            },{
+                "img": "16apNWuSuK7X0uxVcV-OPHHP2bpGl3dgv",
+                "alt": ""
+            },{
+                "img": "16RAdWduhhMio9TM1fuWjdZmNKQ5V7xUC",
+                "alt": ""
+            },{
+                "img": "16JBeuT46b2ojL3zZ3bBMyJvfDN4UJ9aM",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "ARRIOLA MARTÍN",
+        "property_type": "Dormi",
+        "batch": 9,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "toilette": true,
+        "pool": false,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 80,
+        "meters_batch": 100,
+        "time_periods": [
+            {
+                "month": "Marzo a Diciembre",
+                "price": 900,
+                "agent": "DP"
+            }
+        ],
+        "photos": []
+    },
+    {
+        "id": 18,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "LAPHITZONDO MERCEDES",
+        "property_type": "Dormi",
+        "batch": 1,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "toilette": true,
+        "pool": false,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 80,
+        "meters_batch": 100,
+        "time_periods": [
+            {
+                "month": "Marzo a Diciembre",
+                "price": 800,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "1T_vRK-MbS8dtQt1aE9MJKsYHKV4fotr_",
+                "alt": ""
+            },
+            {
+                "img": "1T_f0gCXPV3RrOqXpibWExaMguJFToEYw",
+                "alt": ""
+            },{
+                "img": "1TYQuOJbobTbvsaEcYKfLP1q4jakIYOGQ",
+                "alt": ""
+            },{
+                "img": "1TYPzpbDSNEA81HYQ8-f8_8B6vhAe286q",
+                "alt": ""
+            },{
+                "img": "1TVEpxYhQwTu39nScPmStqa1YjoHlL6gI",
+                "alt": ""
+            },{
+                "img": "1TV0bGWegVcfd9vPVk-tpwwfgfk0MSZbX",
+                "alt": ""
+            },{
+                "img": "1TQqre_M0dAyqFUEVEjn8HCiyy00uq4mE",
+                "alt": ""
+            },{
+                "img": "1TL0qfElnInpjKfabQFaq8tXEZ5XOX1Lb",
+                "alt": ""
+            },{
+                "img": "1TI_WAqjFl5gEOtmAw6Uc8oW-VzoITn8E",
+                "alt": ""
+            },{
+                "img": "1TKoLBFDUVSth7LOpjmax16nEiIuuuv9N",
+                "alt": ""
+            },{
+                "img": "1TGwvDvpsOZLiw_IzHPzDsAGdMZbuxxxn",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "active": true,
+        "observations": "-",
+        "description": "-",
+        "operation_type": "Alquiler",
+        "owner": "LACOSTE LUCÍA",
+        "property_type": "Dormi",
+        "batch": 19,
+        "sector": 1,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "toilette": true,
+        "pool": false,
+        "barbacue": true,
+        "playroom": false,
+        "dependency": false,
+        "meters_covered": 80,
+        "meters_batch": 100,
+        "time_periods": [
+            {
+                "month": "Enero",
+                "price": 1000,
+                "agent": "DP"
+            }, {
+                "month": "Febrero",
+                "price": 1300,
+                "agent": "DP"
+            }
+        ],
+        "photos": [
+            {
+                "img": "https://drive.google.com/file/d/1_Ke_dtJw6Y7Gvx0Juz7sxgTrAizjlNcC/view?usp=sharing",
+                "alt": ""
+            },
+            {
+                "img": "https://drive.google.com/file/d/1_GD_MaX-FAF7_iN-RfyrvAV6Aq0zKk7W/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1_B7Ga9vPeHOMGuKunBf-8pDX-z3zWaMX/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1_AMm3dNuAznKRNAknTuhNxNyWPTM2COb/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1_9WbjAztWmwLqE8tKRcrrDn1tsztXz0O/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1_5ec4OPdS_pAH5QqzzW8aa6LhfH6N79B/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1_-M381pR07pCp7dftl3To9Hf_yysPUfe/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1Zwde6OFqa1sFFiKB_vSBwMCFRL2PI3R7/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZwQeirSOwqfqBZx_78V5KG9kvi9lTkZi/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZoruTjbujR1NMsbL127UkFwEjiR6H14g/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZmhcO0-mx-eNzs8e7nnoqPP75Iq5-vCi/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZeXEZzbfnMDiCyV7ntzU7275Ry4-XR9e/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZfQlPYY2_jZ6wwmB8cLJtpRzYoixoQQa/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZdW42Qh6PoCG1nJzGSeNSaTuOLMo4FX-/view?usp=sharing",
+                "alt": ""
+            },{
+                "img": "https://drive.google.com/file/d/1ZcwWKhZNB4XRhe_WnkngVa1YVWKCS1ZV/view?usp=sharing",
+                "alt": ""
+            }
+        ]
+    }
+]

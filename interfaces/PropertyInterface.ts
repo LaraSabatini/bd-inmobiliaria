@@ -149,3 +149,37 @@ export interface PropertyInterface {
   web_price: boolean
   zonification: string
 }
+
+export interface PropertyExcelInterface {
+  id: number
+  active: boolean
+  observations: string
+  description: string
+  operation_type: string
+  owner: string
+  property_type: string
+  batch: number
+  sector: number
+  bedrooms: number
+  bathrooms: number
+  toilette: boolean
+  pool: false
+  barbacue: boolean
+  playroom: false
+  dependency: false
+  meters_covered: number
+  meters_batch: number
+  time_periods: [
+    {
+      month: string
+      price: number
+      agent: string
+    },
+    {
+      month: string
+      price: number
+      agent: string
+    },
+  ]
+  photos: { img: string; alt: string }[]
+}
