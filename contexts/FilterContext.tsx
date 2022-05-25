@@ -12,9 +12,9 @@ export const FiltersContext = createContext({
   setPropertySelected: null,
   zoneSelected: null,
   setZoneSelected: null,
-  neighborhoods: null,
-  neighborhoodSelected: null,
-  setNeighborhoodSelected: null,
+  // neighborhoods: null,
+  // neighborhoodSelected: null,
+  // setNeighborhoodSelected: null,
   results: null,
   setResults: null,
 })
@@ -29,14 +29,14 @@ function FiltersContextProvider({ children }: any) {
       operation_type: "Venta",
       id: 1,
     },
-    { operation_type: "Alquiler temporal", id: 2 },
+    { operation_type: "Alquiler Temporal", id: 2 },
     { operation_type: "Alquiler", id: 3 },
   ]
 
   const propertyTypes = [
     {
       property_type: "Tipo de propiedad",
-      id: 4,
+      id: 0,
     },
     {
       property_type: "Departamento",
@@ -45,37 +45,42 @@ function FiltersContextProvider({ children }: any) {
     { property_type: "Casa", id: 6 },
     { property_type: "Duplex", id: 7 },
     { property_type: "PH", id: 8 },
+    { property_type: "Dormi", id: 999 },
   ]
 
   const zones = [
     {
       zone_type: "Zonas",
-      id: 100,
+      id: 0,
     },
     {
       zone_type: "Capital Federal",
       id: 9,
     },
     {
-      zone_type: "Cuba Fatima",
+      zone_type: "Cuba Fatima I",
       id: 10,
+    },
+    {
+      zone_type: "Cuba Fatima II",
+      id: 11,
     },
   ]
 
-  const neighborhoods = [
-    {
-      neighborhood_type: "Barrios",
-      id: 101,
-    },
-    {
-      neighborhood_type: "Recoleta",
-      id: 11,
-    },
-    {
-      neighborhood_type: "Coghlan",
-      id: 12,
-    },
-  ]
+  // const neighborhoods = [
+  //   {
+  //     neighborhood_type: "Barrios",
+  //     id: 101,
+  //   },
+  //   {
+  //     neighborhood_type: "Recoleta",
+  //     id: 11,
+  //   },
+  //   {
+  //     neighborhood_type: "Coghlan",
+  //     id: 12,
+  //   },
+  // ]
 
   const [operationSelected, setOperationSelected] = useState<{
     operation_type: string
@@ -92,10 +97,10 @@ function FiltersContextProvider({ children }: any) {
     id: number
   }>(zones[0])
 
-  const [neighborhoodSelected, setNeighborhoodSelected] = useState<{
-    neighborhood_type: string
-    id: number
-  }>(neighborhoods[0])
+  // const [neighborhoodSelected, setNeighborhoodSelected] = useState<{
+  //   neighborhood_type: string
+  //   id: number
+  // }>(neighborhoods[0])
 
   const [results, setResults] = useState<PropertyInterface[]>([])
 
@@ -111,9 +116,9 @@ function FiltersContextProvider({ children }: any) {
         setPropertySelected,
         zoneSelected,
         setZoneSelected,
-        neighborhoods,
-        neighborhoodSelected,
-        setNeighborhoodSelected,
+        // neighborhoods,
+        // setNeighborhoodSelected,
+        // neighborhoodSelected,
         results,
         setResults,
       }}

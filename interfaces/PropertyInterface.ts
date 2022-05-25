@@ -165,6 +165,9 @@ export interface PropertyExcelInterface {
   toilette: boolean
   pool: false
   barbacue: boolean
+  operation_id: number
+  property_type_id: number
+  zone_id: number
   playroom: false
   dependency: false
   meters_covered: number

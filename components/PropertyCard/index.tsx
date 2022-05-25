@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from "react"
 import Surface from "../Assets/Surface"
 import Bedroom from "../Assets/Bedroom"
@@ -7,42 +8,36 @@ import ArrowLeft from "../Assets/ArrowLeft"
 import { Card, ArrowContainer, Arrow } from "./styles"
 
 interface CardInterface {
+  id: number
   photos: {
-    description: string
-    image: string
-    is_blueprint: boolean
-    is_front_cover: boolean
-    order: number
-    original: string
-    thumb: string
+    img: string
+    alt: string
   }[]
   operation_type: string
   description: string
-  price: { currency: string; period: number; price: number }
-  surface: string
-  surface_measurement: string
-  room_amount: number
-  toilet_amount: number
+  time_periods: {
+    month: string
+    price: number
+    agent: string
+  }[]
+  meters_covered: number
+  bedrooms: number
+  bathrooms: number
 }
 
 function PropertyCard({
+  id,
   photos,
   operation_type,
   description,
-  price,
-  surface,
-  surface_measurement,
-  room_amount,
-  toilet_amount,
+  time_periods,
+  meters_covered,
+  bedrooms,
+  bathrooms,
 }: CardInterface) {
   const [currentPhoto, setCurrentPhoto] = useState<{
-    description: string
-    image: string
-    is_blueprint: boolean
-    is_front_cover: boolean
-    order: number
-    original: string
-    thumb: string
+    img: string
+    alt: string
   }>(photos[0])
 
   const amountOfPhotos = photos.length
@@ -71,7 +66,7 @@ function PropertyCard({
   }
 
   return (
-    <Card>
+    <Card key={id}>
       <div className="photoContainer">
         {photos.length > 0 ? (
           <>
@@ -83,38 +78,47 @@ function PropertyCard({
                 <ArrowRight />
               </Arrow>
             </ArrowContainer>
-            <img alt={currentPhoto.description} src={currentPhoto.image} />
+            <img
+              alt={currentPhoto.alt}
+              src={`https://drive.google.com/uc?export=view&id=${currentPhoto.img}`}
+            />
           </>
         ) : (
           <div className="photos">
-            <p>FOTO NO DISPONIBLE</p>
+            <p>NO HAY FOTOS ADJUNTAS</p>
           </div>
         )}
       </div>
       <div className="content">
         <div className="operationType">{operation_type}</div>
-        <p className="description">{description.slice(0, 150)}...</p>
+        {description === "-" ? (
+          <p className="description">{description}</p>
+        ) : (
+          <p className="description">{description.slice(0, 50)}...</p>
+        )}
         <div className="amount">
-          <p className="price">{price.price}</p>
+          <p className="price">{time_periods[0].price}</p>
           <p className="currency">
-            <b> {price.currency}</b>
+            <b> USD</b>
           </p>
         </div>
         <div className="tags">
           <p className="surface">
             <Surface />
-            {surface}
-            <p>{surface_measurement} totales</p>
+            {meters_covered}
+            <p>
+              m<sup>2</sup> totales
+            </p>
           </p>
           <p className="surface">
             <Bedroom />
-            {room_amount} dormitorios
+            {bedrooms} dormitorios
           </p>
         </div>
         <div className="tags">
           <p className="surface">
             <Bathroom />
-            {toilet_amount} baños
+            {bathrooms} baños
           </p>
         </div>
       </div>

@@ -79,6 +79,8 @@ const Card = styled.div`
   .description {
     font-size: 13px;
     padding-top: 10px;
+    width: 280px;
+    height: 50px;
   }
 
   .photoContainer {

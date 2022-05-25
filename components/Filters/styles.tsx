@@ -64,13 +64,14 @@ const Menu = styled.div`
 
 const CardContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
   padding-top: 100px;
-  width: 70%;
+  width: 90%;
+  height: 500px;
   margin: 0 auto;
-  justify-content: space-around;
   margin-bottom: 50px;
+  overflow: auto;
 `
 
 export { FilterContainer, Filter, Menu, CardContainer }

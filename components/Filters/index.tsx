@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
 import React, { useContext, useState } from "react"
-import { PropertyInterface } from "../../interfaces/PropertyInterface"
+import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import { FiltersContext } from "../../contexts/FilterContext"
-import getProperties from "../../services/getProperties.service"
+// import getProperties from "../../services/getProperties.service"
+import properties from "../../properties.json"
 import HouseIcon from "../Assets/HouseIcon"
 import Building from "../Assets/Building"
 import Mapdot from "../Assets/Mapdot"
@@ -20,25 +22,103 @@ function Filters() {
     setPropertySelected,
     setZoneSelected,
     zoneSelected,
-    neighborhoods,
-    neighborhoodSelected,
-    setNeighborhoodSelected,
     results,
     setResults,
   } = useContext(FiltersContext)
 
+  const allProperties = properties
+
   const [operationMenu, setOperationMenu] = useState<boolean>(false)
   const [propertyMenu, setPropertyMenu] = useState<boolean>(false)
   const [zoneMenu, setZoneMenu] = useState<boolean>(false)
-  const [neighborhoodMenu, setNeighborhoodMenu] = useState<boolean>(false)
 
-  const searchProperties = async () => {
-    const res = await getProperties()
-    // eslint-disable-next-line no-console
-    console.log(res.data)
+  // const searchProperties = async () => {
+  //   const res = await getProperties()
+  //   // eslint-disable-next-line no-console
+  //   console.log(res.data)
 
-    setResults(res.data.objects)
+  //   setResults(res.data.objects)
+  // }
+  const searchProperties = () => {
+    const filterOperation: number | null =
+      operationSelected.id !== 0 ? operationSelected.id : null
+    const filterProperty: number | null =
+      propertySelected.id !== 0 ? propertySelected.id : null
+    const filterZone: number | null =
+      zoneSelected.id !== 0 ? zoneSelected.id : null
+
+    if (
+      filterOperation !== null &&
+      filterProperty === null &&
+      filterZone === null
+    ) {
+      const filter = allProperties.filter(
+        property => property.operation_id === operationSelected.id,
+      )
+      setResults(filter)
+    }
+    if (
+      filterOperation === null &&
+      filterProperty !== null &&
+      filterZone === null
+    ) {
+      const filter = allProperties.filter(
+        property => property.property_type_id === propertySelected.id,
+      )
+      setResults(filter)
+    }
+    if (
+      filterOperation === null &&
+      filterProperty === null &&
+      filterZone !== null
+    ) {
+      const filter = allProperties.filter(
+        property => property.zone_id === zoneSelected.id,
+      )
+      setResults(filter)
+    }
+
+    if (
+      filterOperation !== null &&
+      filterProperty !== null &&
+      filterZone === null
+    ) {
+      const filter = allProperties.filter(
+        property =>
+          property.operation_id === operationSelected.id &&
+          property.property_type_id === propertySelected.id,
+      )
+      setResults(filter)
+    }
+
+    if (
+      filterOperation !== null &&
+      filterProperty === null &&
+      filterZone !== null
+    ) {
+      const filter = allProperties.filter(
+        property =>
+          property.operation_id === operationSelected.id &&
+          property.zone_id === zoneSelected.id,
+      )
+      setResults(filter)
+    }
+
+    if (
+      filterOperation === null &&
+      filterProperty !== null &&
+      filterZone !== null
+    ) {
+      const filter = allProperties.filter(
+        property =>
+          property.property_type_id === propertySelected.id &&
+          property.zone_id === zoneSelected.id,
+      )
+      setResults(filter)
+    }
   }
+
+  console.log(results)
 
   return (
     <>
@@ -101,43 +181,23 @@ function Filters() {
           </div>
           <Arrow />
         </Filter>
-        <Filter onClick={() => setNeighborhoodMenu(!neighborhoodMenu)}>
-          {neighborhoodMenu && (
-            <Menu>
-              {neighborhoods.map(
-                (neighborhood: { neighborhood_type: string; id: number }) => (
-                  <button
-                    type="button"
-                    onClick={() => setNeighborhoodSelected(neighborhood)}
-                  >
-                    {neighborhood.neighborhood_type}
-                  </button>
-                ),
-              )}
-            </Menu>
-          )}
-          <div>
-            <Mapdot />
-            {neighborhoodSelected.neighborhood_type}
-          </div>
-          <Arrow />
-        </Filter>
+
         <button onClick={searchProperties} className="action" type="button">
           APLICAR
         </button>
       </FilterContainer>
       <CardContainer>
         {results !== undefined &&
-          results.map((property: PropertyInterface) => (
+          results.map((property: PropertyExcelInterface) => (
             <PropertyCard
               photos={property.photos}
-              operation_type={property.operations[0].operation_type}
+              id={property.id}
+              operation_type={property.operation_type}
               description={property.description}
-              price={property.operations[0].prices[0]}
-              surface={property.surface}
-              surface_measurement={property.surface_measurement}
-              room_amount={property.room_amount}
-              toilet_amount={property.toilet_amount}
+              time_periods={property.time_periods}
+              meters_covered={property.meters_covered}
+              bedrooms={property.bedrooms}
+              bathrooms={property.bathrooms}
             />
           ))}
       </CardContainer>
