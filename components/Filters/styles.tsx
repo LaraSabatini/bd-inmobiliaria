@@ -72,6 +72,12 @@ const CardContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: auto;
+
+  .card {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
 `
 
 export { FilterContainer, Filter, Menu, CardContainer }

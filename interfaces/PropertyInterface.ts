@@ -168,6 +168,7 @@ export interface PropertyExcelInterface {
   operation_id: number
   property_type_id: number
   zone_id: number
+  address: string
   playroom: false
   dependency: false
   meters_covered: number

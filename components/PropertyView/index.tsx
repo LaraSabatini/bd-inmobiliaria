@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from "react"
-import { PropertyInterface } from "../../interfaces/PropertyInterface"
-import getProperty from "../../services/getProperty.service"
+import React, { useState } from "react"
+// import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
+// import getProperty from "../../services/getProperty.service"
 import ArrowRight from "../Assets/ArrowRight"
 import ArrowLeft from "../Assets/ArrowLeft"
+import Bathroom from "../Assets/Bathroom"
+import Bedroom from "../Assets/Bedroom"
+import Pool from "../Assets/Pool"
+import Grill from "../Assets/Grill"
+import Playroom from "../Assets/Playroom"
+import Dependency from "../Assets/Dependency"
+import Size from "../Assets/Size"
+
 import {
   SectionContainer,
   Slider,
@@ -11,39 +19,39 @@ import {
   ArrowContainer,
   Description,
   Title,
+  PriceContainer,
+  Amenity,
+  Price,
 } from "./styles"
 
 interface PropertyViewInterface {
-  id: number
+  data: any
 }
 
-function PropertyView({ id }: PropertyViewInterface) {
-  const [propertyData, setPropertyData] = useState<PropertyInterface>()
+function PropertyView({ data }: PropertyViewInterface) {
+  const propertyData = data
   const [currentPhoto, setCurrentPhoto] = useState<{
-    description: string
-    image: string
-    is_blueprint: boolean
-    is_front_cover: boolean
-    order: number
-    original: string
-    thumb: string
-  }>()
+    img: string
+    alt: string
+  }>(data?.photos[0])
 
-  const amountOfPhotos = propertyData?.photos.length
+  const amountOfPhotos = data?.photos?.length
   const [counter, setCounter] = useState<number>(1)
 
-  const getData = async () => {
-    const res = await getProperty(id)
-    // eslint-disable-next-line no-console
-    console.log(res.data)
-    setPropertyData(res.data)
-    setCurrentPhoto(res.data.photos[0])
-  }
+  // const getData = async () => {
+  // const res = await getProperty(id)
+  // eslint-disable-next-line no-console
+  // console.log(res.data)
+  // setPropertyData(data)
+  // if (data.photos.length) {
+  //   setCurrentPhoto(data?.photos[0])
+  // }
+  // }
 
-  useEffect(() => {
-    getData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  // React.useEffect(() => {
+  // getData()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
 
   const goNext = () => {
     const findIndex = propertyData?.photos.findIndex(
@@ -73,14 +81,13 @@ function PropertyView({ id }: PropertyViewInterface) {
 
   return (
     <SectionContainer>
-      <Address>
-        {propertyData?.location.full_location} - {propertyData?.fake_address}
-      </Address>
+      <Address>{data.address}</Address>
       <div
         style={{
           display: "flex",
           alignItems: "flex-start",
-          justifyContent: "space-between",
+          // justifyContent: "space-between",
+          gap: "10px",
           marginTop: "20px",
         }}
       >
@@ -93,18 +100,68 @@ function PropertyView({ id }: PropertyViewInterface) {
               <ArrowRight />
             </Arrow>
           </ArrowContainer>
-          <img alt={currentPhoto?.description} src={currentPhoto?.image} />
+          <img
+            alt={currentPhoto?.alt}
+            src={`https://drive.google.com/uc?export=view&id=${currentPhoto.img}`}
+          />
         </Slider>
         <Description>
-          <Title>
-            ALQUILER{" "}
-            <span>
-              {propertyData?.operations[0].prices[0].price}{" "}
-              {propertyData?.operations[0].prices[0].currency}
-            </span>
-          </Title>
-          <p>{propertyData?.description}</p>
+          <Title>ALQUILER</Title>
+          <p>{data?.description}</p>
+
+          {/* amenities */}
+          <Title>Amenities:</Title>
+          <Amenity>
+            <Bedroom />
+            <p>{data.bedrooms} dormitorios</p>
+          </Amenity>
+          <Amenity>
+            <Bathroom />
+            <p>{data.bathrooms} baños</p>
+          </Amenity>
+          <Amenity>
+            <Bathroom />
+            {data.toilette ? <p>con toilette</p> : <p>sin toilette</p>}
+          </Amenity>
+          <Amenity>
+            <Pool />
+            {data.pool ? <p>con pileta</p> : <p>sin pileta</p>}
+          </Amenity>
+          <Amenity>
+            <Grill />
+            {data.barbacue ? <p>con parrilla</p> : <p>sin parrilla</p>}
+          </Amenity>
+          <Amenity>
+            <Playroom />
+            {data.playroom ? <p>con playroom</p> : <p>sin playroom</p>}
+          </Amenity>
+          <Amenity>
+            <Dependency />
+            {data.dependency ? <p>con dependencia</p> : <p>sin dependencia</p>}
+          </Amenity>
+          <Amenity>
+            <Size />
+            <p>
+              {data.meters_covered} m<sup>2</sup>
+            </p>
+          </Amenity>
         </Description>
+      </div>
+      <div
+        style={{
+          height: "fit-content",
+          marginTop: "20px",
+        }}
+      >
+        <Price>
+          <Title>Precios:</Title>
+          {data.time_periods.map(time_period => (
+            <PriceContainer>
+              <p>{time_period.month}</p>
+              <p>{time_period.price} USD</p>
+            </PriceContainer>
+          ))}
+        </Price>
       </div>
     </SectionContainer>
   )

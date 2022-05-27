@@ -3,6 +3,9 @@ import styled from "styled-components"
 const SectionContainer = styled.div`
   width: 80%;
   font-family: "Poppins";
+  margin: 0 auto;
+  padding-top: 100px;
+  gap: 10px;
 `
 
 const Slider = styled.div`
@@ -12,20 +15,30 @@ const Slider = styled.div`
   justify-content: center;
   width: fit-content;
   border-radius: 10px;
+  width: 700px;
 
   img {
-    width: 900px;
+    width: 700px;
     border-radius: 10px;
     height: 500px;
   }
 `
 
 const Address = styled.div`
-  width: 100%;
+  width: 97.3%;
   background: #ffffff;
   box-shadow: 0px 8px 24px rgba(4, 21, 120, 0.2);
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 15px 15px;
+  text-transform: uppercase;
+`
+
+const Price = styled.div`
+  width: 500px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(4, 21, 120, 0.2);
+  border-radius: 15px;
+  padding: 15px 15px 50px 15px;
   text-transform: uppercase;
 `
 
@@ -57,6 +70,7 @@ const Description = styled.div`
   border-radius: 10px;
   width: 40%;
   height: 500px;
+  padding-left: 25px;
 
   p {
     margin: 0;
@@ -72,6 +86,29 @@ const Title = styled.h5`
   justify-content: space-between;
 `
 
+const PriceContainer = styled.div`
+  display: flex;
+  border-bottom: 1px solid grey;
+  width: 300px;
+  justify-content: space-between;
+  margin-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  p {
+    margin: 0;
+  }
+`
+
+const Amenity = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 30px;
+  border-bottom: 1px solid grey;
+`
+
 export {
   SectionContainer,
   Slider,
@@ -80,4 +117,7 @@ export {
   Arrow,
   Description,
   Title,
+  PriceContainer,
+  Amenity,
+  Price,
 }

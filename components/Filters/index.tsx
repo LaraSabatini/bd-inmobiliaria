@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import React, { useContext, useState } from "react"
+import { useRouter } from "next/router"
 import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import { FiltersContext } from "../../contexts/FilterContext"
 // import getProperties from "../../services/getProperties.service"
@@ -12,6 +13,12 @@ import PropertyCard from "../PropertyCard"
 import { FilterContainer, Filter, Menu, CardContainer } from "./styles"
 
 function Filters() {
+  const router = useRouter()
+
+  const setRoute = (id: number) => {
+    router.push(`/rents/${id}`)
+  }
+
   const {
     operationTypes,
     operationSelected,
@@ -189,16 +196,23 @@ function Filters() {
       <CardContainer>
         {results !== undefined &&
           results.map((property: PropertyExcelInterface) => (
-            <PropertyCard
-              photos={property.photos}
-              id={property.id}
-              operation_type={property.operation_type}
-              description={property.description}
-              time_periods={property.time_periods}
-              meters_covered={property.meters_covered}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-            />
+            <button
+              className="card"
+              type="button"
+              key={property.id}
+              onClick={() => setRoute(property.id)}
+            >
+              <PropertyCard
+                photos={property.photos}
+                id={property.id}
+                operation_type={property.operation_type}
+                description={property.description}
+                time_periods={property.time_periods}
+                meters_covered={property.meters_covered}
+                bedrooms={property.bedrooms}
+                bathrooms={property.bathrooms}
+              />
+            </button>
           ))}
       </CardContainer>
     </>
