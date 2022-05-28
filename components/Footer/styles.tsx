@@ -47,6 +47,27 @@ const Container = styled.div`
     margin-left: 150px;
     margin-top: 50px;
   }
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    align-items: center;
+
+    .logo {
+      margin-left: 0px;
+      margin-top: 50px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-left: -100px;
+      margin-top: 50px;
+    }
+  }
 `
 
 export default Container

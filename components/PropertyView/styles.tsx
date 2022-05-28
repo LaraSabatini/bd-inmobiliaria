@@ -6,6 +6,15 @@ const SectionContainer = styled.div`
   margin: 0 auto;
   padding-top: 100px;
   gap: 10px;
+
+  @media (max-width: 410px) {
+    /* width: 90%; */
+    width: 300px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Slider = styled.div`
@@ -21,6 +30,14 @@ const Slider = styled.div`
     width: 700px;
     border-radius: 10px;
     height: 500px;
+  }
+
+  @media (max-width: 410px) {
+    img {
+      width: 300px;
+      border-radius: 10px;
+      height: 300px;
+    }
   }
 `
 
@@ -40,6 +57,10 @@ const Price = styled.div`
   border-radius: 15px;
   padding: 15px 15px 50px 15px;
   text-transform: uppercase;
+
+  @media (max-width: 410px) {
+    width: 300px;
+  }
 `
 
 const ArrowContainer = styled.div`
@@ -49,6 +70,10 @@ const ArrowContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   top: 50%;
+
+  @media (max-width: 410px) {
+    width: 300px;
+  }
 `
 
 const Arrow = styled.div`
@@ -84,6 +109,11 @@ const Description = styled.div`
   .description {
     font-size: 14px;
   }
+
+  @media (max-width: 410px) {
+    width: 300px;
+    height: 400px;
+  }
 `
 
 const Title = styled.h5`
@@ -92,6 +122,10 @@ const Title = styled.h5`
   display: flex;
   width: 50%;
   justify-content: space-between;
+
+  @media (max-width: 410px) {
+    padding-left: 0px;
+  }
 `
 
 const PriceContainer = styled.div`
@@ -106,6 +140,10 @@ const PriceContainer = styled.div`
   p {
     margin: 0;
   }
+
+  @media (max-width: 410px) {
+    margin-left: 0px;
+  }
 `
 
 const Amenity = styled.div`
@@ -115,6 +153,27 @@ const Amenity = styled.div`
   width: 300px;
   margin-left: 30px;
   border-bottom: 1px solid grey;
+
+  @media (max-width: 410px) {
+    margin-left: 0px;
+    width: 280px;
+  }
+
+  svg {
+    margin-left: 10px;
+  }
+`
+
+const Container = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export {
@@ -128,4 +187,5 @@ export {
   PriceContainer,
   Amenity,
   Price,
+  Container,
 }

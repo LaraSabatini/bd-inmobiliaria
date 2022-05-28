@@ -22,6 +22,7 @@ import {
   PriceContainer,
   Amenity,
   Price,
+  Container,
 } from "./styles"
 
 interface PropertyViewInterface {
@@ -82,15 +83,7 @@ function PropertyView({ data }: PropertyViewInterface) {
   return (
     <SectionContainer>
       <Address>{data.address}</Address>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "flex-start",
-          // justifyContent: "space-between",
-          gap: "10px",
-          marginTop: "20px",
-        }}
-      >
+      <Container>
         <Slider>
           <ArrowContainer>
             <Arrow onClick={goPrev}>
@@ -152,7 +145,7 @@ function PropertyView({ data }: PropertyViewInterface) {
             </Amenity>
           </div>
         </Description>
-      </div>
+      </Container>
       <div
         style={{
           height: "fit-content",

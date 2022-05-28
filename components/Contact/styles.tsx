@@ -17,12 +17,27 @@ const Container = styled.div`
     font-size: 25px;
     color: #0d0e14;
   }
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `
 
 const Form = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  .submit {
+    background-color: #041578;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Poppins";
+    font-size: 14px;
+  }
 `
 
 const Input = styled.div`
@@ -48,6 +63,16 @@ const Input = styled.div`
   }
 `
 
-const Map = styled.div``
+const Map = styled.div`
+  iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    @media (max-width: 410px) {
+      width: 350px;
+      border: 0;
+    }
+  }
+`
 
 export { Container, Form, Input, Map }
