@@ -14,6 +14,13 @@ const Container = styled.div`
     color: black;
     text-decoration: none;
   }
+
+  @media (max-width: 410px) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `
 
 const Links = styled.div`
@@ -34,6 +41,11 @@ const Links = styled.div`
     align-items: center;
     cursor: pointer;
     color: black;
+  }
+
+  @media (max-width: 410px) {
+    /* visibility: hidden; */
+    display: none;
   }
 `
 
@@ -60,4 +72,71 @@ const Divider = styled.div`
   margin: 10px 0;
 `
 
-export { Container, Links, Menu, Divider }
+const MenuButton = styled.button`
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  .line {
+    width: 20px;
+    height: 2px;
+    background-color: #00000064;
+  }
+  border: none;
+  background: none;
+
+  display: none;
+
+  @media (max-width: 410px) {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+`
+
+const MobileMenu = styled.div`
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  gap: 10px;
+  padding: 10px;
+  right: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  text-align: right;
+
+  button {
+    border: none;
+    background: none;
+  }
+`
+
+const SubMenuMobile = styled.div`
+  position: absolute;
+  top: 58px;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  width: 100px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+`
+
+export {
+  Container,
+  Links,
+  Menu,
+  Divider,
+  MenuButton,
+  MobileMenu,
+  SubMenuMobile,
+}
