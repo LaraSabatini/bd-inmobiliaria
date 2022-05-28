@@ -1,10 +1,11 @@
-/* eslint-disable no-console */
 import React, { useState } from "react"
+import { useRouter } from "next/router"
 import Surface from "../Assets/Surface"
 import Bedroom from "../Assets/Bedroom"
 import Bathroom from "../Assets/Bathroom"
 import ArrowRight from "../Assets/ArrowRight"
 import ArrowLeft from "../Assets/ArrowLeft"
+import Pool from "../Assets/Pool"
 import { Card, ArrowContainer, Arrow } from "./styles"
 
 interface CardInterface {
@@ -23,6 +24,7 @@ interface CardInterface {
   meters_covered: number
   bedrooms: number
   bathrooms: number
+  pool: boolean
 }
 
 function PropertyCard({
@@ -34,7 +36,14 @@ function PropertyCard({
   meters_covered,
   bedrooms,
   bathrooms,
+  pool,
 }: CardInterface) {
+  const router = useRouter()
+
+  const setRoute = (prorperty_id: number) => {
+    router.push(`/rents/${prorperty_id}`)
+  }
+
   const [currentPhoto, setCurrentPhoto] = useState<{
     img: string
     alt: string
@@ -79,8 +88,8 @@ function PropertyCard({
               </Arrow>
             </ArrowContainer>
             <img
-              alt={currentPhoto.alt}
-              src={`https://drive.google.com/uc?export=view&id=${currentPhoto.img}`}
+              alt={currentPhoto?.alt}
+              src={`https://drive.google.com/uc?export=view&id=${currentPhoto?.img}`}
             />
           </>
         ) : (
@@ -89,39 +98,45 @@ function PropertyCard({
           </div>
         )}
       </div>
-      <div className="content">
-        <div className="operationType">{operation_type}</div>
-        {description === "-" ? (
-          <p className="description">{description}</p>
-        ) : (
-          <p className="description">{description.slice(0, 50)}...</p>
-        )}
-        <div className="amount">
-          <p className="price">{time_periods[0].price}</p>
-          <p className="currency">
-            <b> USD</b>
-          </p>
-        </div>
-        <div className="tags">
-          <p className="surface">
-            <Surface />
-            {meters_covered}
-            <p>
-              m<sup>2</sup> totales
+      <button className="card" type="button" onClick={() => setRoute(id)}>
+        <div className="content">
+          <div className="operationType">{operation_type}</div>
+          {description === "-" ? (
+            <p className="description">{description}</p>
+          ) : (
+            <p className="description">{description.slice(0, 50)}...</p>
+          )}
+          <div className="amount">
+            <p className="price">{time_periods[0].price}</p>
+            <p className="currency">
+              <b> USD</b>
             </p>
-          </p>
-          <p className="surface">
-            <Bedroom />
-            {bedrooms} dormitorios
-          </p>
+          </div>
+          <div className="tags" style={{ marginTop: "20px" }}>
+            <p className="surface">
+              <Surface />
+              {meters_covered}
+              <p>
+                m<sup>2</sup> totales
+              </p>
+            </p>
+            <p className="surface">
+              <Bedroom />
+              {bedrooms} dormitorios
+            </p>
+          </div>
+          <div className="tags">
+            <p className="surface">
+              <Bathroom />
+              {bathrooms} baños
+            </p>
+            <p className="surface">
+              <Pool />
+              {pool ? <p>con pileta</p> : <p>sin pileta</p>}
+            </p>
+          </div>
         </div>
-        <div className="tags">
-          <p className="surface">
-            <Bathroom />
-            {bathrooms} baños
-          </p>
-        </div>
-      </div>
+      </button>
     </Card>
   )
 }

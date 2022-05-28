@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react"
-import { PropertyInterface } from "../../interfaces/PropertyInterface"
+import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import getSellProperties from "../../services/getSellProperties.service"
 import PropertyCard from "../PropertyCard"
 import PropertyView from "../PropertyView"
 import Container from "./styles"
 
 function SellView() {
-  const [list, setList] = useState<PropertyInterface[]>([])
-  const [id, setId] = useState<number>(0)
+  const [list, setList] = useState<PropertyExcelInterface[]>([])
+  const [id, setId] = useState<PropertyExcelInterface>()
 
   const getProperties = async () => {
     const res = await getSellProperties()
@@ -20,7 +20,7 @@ function SellView() {
 
   return (
     <Container>
-      {id === 0 &&
+      {id === undefined &&
         list.length > 0 &&
         list.map(property => (
           <button
@@ -28,22 +28,23 @@ function SellView() {
             type="button"
             key={property.id}
             onClick={() => {
-              setId(property.id)
+              setId(property)
             }}
           >
             <PropertyCard
               photos={property.photos}
-              operation_type="VENTA"
+              id={property.id}
+              operation_type={property.operation_type}
               description={property.description}
-              price={property.operations[0].prices[0]}
-              surface={property.surface}
-              surface_measurement={property.surface_measurement}
-              room_amount={property.room_amount}
-              toilet_amount={property.toilet_amount}
+              time_periods={property.time_periods}
+              meters_covered={property.meters_covered}
+              bedrooms={property.bedrooms}
+              bathrooms={property.bathrooms}
+              pool={property.pool}
             />
           </button>
         ))}
-      {id !== 0 && <PropertyView id={id} />}
+      {id === undefined && <PropertyView data={id} />}
     </Container>
   )
 }

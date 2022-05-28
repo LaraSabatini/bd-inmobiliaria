@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { useRouter } from "next/router"
 import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import properties from "../../properties.json"
 // import getSellProperties from "../../services/getSellProperties.service"
@@ -8,7 +7,6 @@ import Container from "./styles"
 
 function RentView() {
   const allProperties = properties
-  const router = useRouter()
 
   const [list, setList] = useState<any[]>([])
 
@@ -28,31 +26,21 @@ function RentView() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const setRoute = (id: number) => {
-    router.push(`/rents/${id}`)
-  }
-
   return (
     <Container>
       {list.length > 0 &&
         list.map((property: PropertyExcelInterface) => (
-          <button
-            className="card"
-            type="button"
-            key={property.id}
-            onClick={() => setRoute(property.id)}
-          >
-            <PropertyCard
-              photos={property.photos}
-              id={property.id}
-              operation_type={property.operation_type}
-              description={property.description}
-              time_periods={property.time_periods}
-              meters_covered={property.meters_covered}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-            />
-          </button>
+          <PropertyCard
+            photos={property.photos}
+            id={property.id}
+            operation_type={property.operation_type}
+            description={property.description}
+            time_periods={property.time_periods}
+            meters_covered={property.meters_covered}
+            bedrooms={property.bedrooms}
+            bathrooms={property.bathrooms}
+            pool={property.pool}
+          />
         ))}
     </Container>
   )

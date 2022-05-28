@@ -15,6 +15,10 @@ const Card = styled.div`
     height: 200px;
   }
 
+  .card {
+    cursor: pointer;
+  }
+
   .photos {
     width: 100%;
     display: flex;
@@ -49,10 +53,11 @@ const Card = styled.div`
 
   .tags {
     display: flex;
-    width: 100%;
     gap: 10px;
+    margin-left: -15px;
     align-items: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    padding: 10px;
   }
 
   .surface {
@@ -78,9 +83,10 @@ const Card = styled.div`
 
   .description {
     font-size: 13px;
-    padding-top: 10px;
+    padding-top: 20px;
     width: 280px;
     height: 50px;
+    text-align: left;
   }
 
   .photoContainer {
