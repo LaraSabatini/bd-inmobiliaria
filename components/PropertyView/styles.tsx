@@ -76,6 +76,14 @@ const Description = styled.div`
     margin: 0;
     padding: 0px 25px;
   }
+
+  .amenities {
+    /* margin-top: -20px; */
+  }
+
+  .description {
+    font-size: 14px;
+  }
 `
 
 const Title = styled.h5`

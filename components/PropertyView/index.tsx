@@ -107,44 +107,50 @@ function PropertyView({ data }: PropertyViewInterface) {
         </Slider>
         <Description>
           <Title>ALQUILER</Title>
-          <p>{data?.description}</p>
+          <p className="description">{data?.description}</p>
 
           {/* amenities */}
-          <Title>Amenities:</Title>
-          <Amenity>
-            <Bedroom />
-            <p>{data.bedrooms} dormitorios</p>
-          </Amenity>
-          <Amenity>
-            <Bathroom />
-            <p>{data.bathrooms} baños</p>
-          </Amenity>
-          <Amenity>
-            <Bathroom />
-            {data.toilette ? <p>con toilette</p> : <p>sin toilette</p>}
-          </Amenity>
-          <Amenity>
-            <Pool />
-            {data.pool ? <p>con pileta</p> : <p>sin pileta</p>}
-          </Amenity>
-          <Amenity>
-            <Grill />
-            {data.barbacue ? <p>con parrilla</p> : <p>sin parrilla</p>}
-          </Amenity>
-          <Amenity>
-            <Playroom />
-            {data.playroom ? <p>con playroom</p> : <p>sin playroom</p>}
-          </Amenity>
-          <Amenity>
-            <Dependency />
-            {data.dependency ? <p>con dependencia</p> : <p>sin dependencia</p>}
-          </Amenity>
-          <Amenity>
-            <Size />
-            <p>
-              {data.meters_covered} m<sup>2</sup>
-            </p>
-          </Amenity>
+          <div className="amenities">
+            <Title>Amenities:</Title>
+            <Amenity>
+              <Bedroom />
+              <p>{data.bedrooms} dormitorios</p>
+            </Amenity>
+            <Amenity>
+              <Bathroom />
+              <p>{data.bathrooms} baños</p>
+            </Amenity>
+            <Amenity>
+              <Bathroom />
+              {data.toilette ? <p>con toilette</p> : <p>sin toilette</p>}
+            </Amenity>
+            <Amenity>
+              <Pool />
+              {data.pool ? <p>con pileta</p> : <p>sin pileta</p>}
+            </Amenity>
+            <Amenity>
+              <Grill />
+              {data.barbacue ? <p>con parrilla</p> : <p>sin parrilla</p>}
+            </Amenity>
+            <Amenity>
+              <Playroom />
+              {data.playroom ? <p>con playroom</p> : <p>sin playroom</p>}
+            </Amenity>
+            <Amenity>
+              <Dependency />
+              {data.dependency ? (
+                <p>con dependencia</p>
+              ) : (
+                <p>sin dependencia</p>
+              )}
+            </Amenity>
+            <Amenity>
+              <Size />
+              <p>
+                {data.meters_covered} m<sup>2</sup>
+              </p>
+            </Amenity>
+          </div>
         </Description>
       </div>
       <div
