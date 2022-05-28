@@ -21,6 +21,11 @@ const FilterContainer = styled.div`
     background: none;
     outline: none;
   }
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `
 
 const Filter = styled.div`
@@ -42,6 +47,11 @@ const Filter = styled.div`
 
   background: #ffffff;
   box-shadow: 0px 8px 24px rgba(4, 21, 120, 0.2);
+
+  @media (max-width: 410px) {
+    gap: 0px;
+    justify-content: space-between;
+  }
 `
 
 const Menu = styled.div`
