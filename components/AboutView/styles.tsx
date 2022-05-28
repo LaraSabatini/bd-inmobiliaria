@@ -23,6 +23,20 @@ const AboutContainer = styled.div`
     font-family: "Poppins";
     font-size: 15px;
   }
+
+  @media (max-width: 410px) {
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+      width: 350px;
+    }
+
+    div {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
 `
 
 export default AboutContainer
