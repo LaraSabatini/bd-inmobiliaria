@@ -65,7 +65,7 @@ function PropertyView({ data }: PropertyViewInterface) {
 
   return (
     <SectionContainer>
-      <Address>{data.address}</Address>
+      <Address>{data?.address}</Address>
       <Container>
         <Slider>
           <ArrowContainer>
@@ -89,31 +89,31 @@ function PropertyView({ data }: PropertyViewInterface) {
             <Title>Amenities:</Title>
             <Amenity>
               <Bedroom />
-              <p>{data.bedrooms} dormitorios</p>
+              <p>{data?.bedrooms} dormitorios</p>
             </Amenity>
             <Amenity>
               <Bathroom />
-              <p>{data.bathrooms} baños</p>
+              <p>{data?.bathrooms} baños</p>
             </Amenity>
             <Amenity>
               <Bathroom />
-              {data.toilette ? <p>con toilette</p> : <p>sin toilette</p>}
+              {data?.toilette ? <p>con toilette</p> : <p>sin toilette</p>}
             </Amenity>
             <Amenity>
               <Pool />
-              {data.pool ? <p>con pileta</p> : <p>sin pileta</p>}
+              {data?.pool ? <p>con pileta</p> : <p>sin pileta</p>}
             </Amenity>
             <Amenity>
               <Grill />
-              {data.barbacue ? <p>con parrilla</p> : <p>sin parrilla</p>}
+              {data?.barbacue ? <p>con parrilla</p> : <p>sin parrilla</p>}
             </Amenity>
             <Amenity>
               <Playroom />
-              {data.playroom ? <p>con playroom</p> : <p>sin playroom</p>}
+              {data?.playroom ? <p>con playroom</p> : <p>sin playroom</p>}
             </Amenity>
             <Amenity>
               <Dependency />
-              {data.dependency ? (
+              {data?.dependency ? (
                 <p>con dependencia</p>
               ) : (
                 <p>sin dependencia</p>
@@ -122,7 +122,7 @@ function PropertyView({ data }: PropertyViewInterface) {
             <Amenity>
               <Size />
               <p>
-                {data.meters_covered} m<sup>2</sup>
+                {data?.meters_covered} m<sup>2</sup>
               </p>
             </Amenity>
           </div>
@@ -136,7 +136,7 @@ function PropertyView({ data }: PropertyViewInterface) {
       >
         <Price>
           <Title>Precios:</Title>
-          {data.time_periods.map(time_period => (
+          {data?.time_periods.map(time_period => (
             <PriceContainer>
               <p>{time_period.month}</p>
               <p>{time_period.price} USD</p>
