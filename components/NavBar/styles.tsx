@@ -72,7 +72,7 @@ const Divider = styled.div`
   margin: 10px 0;
 `
 
-const MenuButton = styled.button`
+const MenuButton = styled.div`
   .button {
     display: flex;
     flex-direction: column;
