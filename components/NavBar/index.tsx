@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from "react"
 import Link from "next/link"
 import Logo from "../Assets/Logo"
@@ -21,9 +19,15 @@ function Navbar() {
     <Container>
       <Logo />
       <MenuButton>
-        <div onClick={() => setMobileMenu(!mobileMenu)} className="line" />
-        <div onClick={() => setMobileMenu(!mobileMenu)} className="line" />
-        <div onClick={() => setMobileMenu(!mobileMenu)} className="line" />
+        <button
+          type="button"
+          onClick={() => setMobileMenu(!mobileMenu)}
+          className="button"
+        >
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
+        </button>
         {mobileMenu && (
           <MobileMenu>
             <Link href="/">Inicio</Link>

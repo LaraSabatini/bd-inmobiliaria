@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react"
 import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import { FiltersContext } from "../../contexts/FilterContext"
-// import getProperties from "../../services/getProperties.service"
 import properties from "../../properties.json"
 import HouseIcon from "../Assets/HouseIcon"
 import Building from "../Assets/Building"
@@ -31,13 +30,6 @@ function Filters() {
   const [propertyMenu, setPropertyMenu] = useState<boolean>(false)
   const [zoneMenu, setZoneMenu] = useState<boolean>(false)
 
-  // const searchProperties = async () => {
-  //   const res = await getProperties()
-  //   // eslint-disable-next-line no-console
-  //   console.log(res.data)
-
-  //   setResults(res.data.objects)
-  // }
   const searchProperties = () => {
     const filterOperation: number | null =
       operationSelected.id !== 0 ? operationSelected.id : null

@@ -12,9 +12,6 @@ export const FiltersContext = createContext({
   setPropertySelected: null,
   zoneSelected: null,
   setZoneSelected: null,
-  // neighborhoods: null,
-  // neighborhoodSelected: null,
-  // setNeighborhoodSelected: null,
   results: null,
   setResults: null,
 })
@@ -67,21 +64,6 @@ function FiltersContextProvider({ children }: any) {
     },
   ]
 
-  // const neighborhoods = [
-  //   {
-  //     neighborhood_type: "Barrios",
-  //     id: 101,
-  //   },
-  //   {
-  //     neighborhood_type: "Recoleta",
-  //     id: 11,
-  //   },
-  //   {
-  //     neighborhood_type: "Coghlan",
-  //     id: 12,
-  //   },
-  // ]
-
   const [operationSelected, setOperationSelected] = useState<{
     operation_type: string
     id: number
@@ -97,11 +79,6 @@ function FiltersContextProvider({ children }: any) {
     id: number
   }>(zones[0])
 
-  // const [neighborhoodSelected, setNeighborhoodSelected] = useState<{
-  //   neighborhood_type: string
-  //   id: number
-  // }>(neighborhoods[0])
-
   const [results, setResults] = useState<PropertyInterface[]>([])
 
   return (
@@ -116,9 +93,6 @@ function FiltersContextProvider({ children }: any) {
         setPropertySelected,
         zoneSelected,
         setZoneSelected,
-        // neighborhoods,
-        // setNeighborhoodSelected,
-        // neighborhoodSelected,
         results,
         setResults,
       }}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
 import properties from "../../properties.json"
-// import getSellProperties from "../../services/getSellProperties.service"
 import PropertyCard from "../PropertyCard"
 import Container from "./styles"
 
@@ -11,8 +10,6 @@ function RentView() {
   const [list, setList] = useState<any[]>([])
 
   const getProperties = () => {
-    // const res = await getSellProperties()
-    // setList(res.data.objects)
     const filtered = allProperties.filter(
       (property: PropertyExcelInterface) =>
         property.operation_id === 2 && property.active,

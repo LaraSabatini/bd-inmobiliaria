@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-// import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
-// import getProperty from "../../services/getProperty.service"
 import ArrowRight from "../Assets/ArrowRight"
 import ArrowLeft from "../Assets/ArrowLeft"
 import Bathroom from "../Assets/Bathroom"
@@ -38,21 +36,6 @@ function PropertyView({ data }: PropertyViewInterface) {
 
   const amountOfPhotos = data?.photos?.length
   const [counter, setCounter] = useState<number>(1)
-
-  // const getData = async () => {
-  // const res = await getProperty(id)
-  // eslint-disable-next-line no-console
-  // console.log(res.data)
-  // setPropertyData(data)
-  // if (data.photos.length) {
-  //   setCurrentPhoto(data?.photos[0])
-  // }
-  // }
-
-  // React.useEffect(() => {
-  // getData()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
 
   const goNext = () => {
     const findIndex = propertyData?.photos.findIndex(
@@ -102,7 +85,6 @@ function PropertyView({ data }: PropertyViewInterface) {
           <Title>ALQUILER</Title>
           <p className="description">{data?.description}</p>
 
-          {/* amenities */}
           <div className="amenities">
             <Title>Amenities:</Title>
             <Amenity>

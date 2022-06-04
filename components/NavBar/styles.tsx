@@ -73,10 +73,16 @@ const Divider = styled.div`
 `
 
 const MenuButton = styled.button`
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border: none;
+    background: none;
+  }
   .line {
     width: 20px;
     height: 2px;
