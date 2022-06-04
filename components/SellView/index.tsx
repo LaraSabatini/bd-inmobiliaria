@@ -1,52 +1,46 @@
 import React, { useEffect, useState } from "react"
 import { PropertyExcelInterface } from "../../interfaces/PropertyInterface"
-import getSellProperties from "../../services/getSellProperties.service"
+import properties from "../../properties.json"
 import PropertyCard from "../PropertyCard"
-import PropertyView from "../PropertyView"
 import Container from "./styles"
 
-function SellView() {
-  const [list, setList] = useState<PropertyExcelInterface[]>([])
-  const [id, setId] = useState<PropertyExcelInterface>()
+function RentView() {
+  const allProperties = properties
 
-  const getProperties = async () => {
-    const res = await getSellProperties()
-    setList(res.data.objects)
+  const [list, setList] = useState<any[]>([])
+
+  const getProperties = () => {
+    const filtered = allProperties.filter(
+      (property: PropertyExcelInterface) =>
+        property.operation_id === 1 && property.active,
+    )
+
+    setList(filtered)
   }
 
   useEffect(() => {
     getProperties()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
     <Container>
-      {id === undefined &&
-        list.length > 0 &&
-        list.map(property => (
-          <button
-            className="card"
-            type="button"
-            key={property.id}
-            onClick={() => {
-              setId(property)
-            }}
-          >
-            <PropertyCard
-              photos={property.photos}
-              id={property.id}
-              operation_type={property.operation_type}
-              description={property.description}
-              time_periods={property.time_periods}
-              meters_covered={property.meters_covered}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-              pool={property.pool}
-            />
-          </button>
+      {list.length > 0 &&
+        list.map((property: PropertyExcelInterface) => (
+          <PropertyCard
+            photos={property.photos}
+            id={property.id}
+            operation_type={property.operation_type}
+            description={property.description}
+            time_periods={property.time_periods}
+            meters_covered={property.meters_covered}
+            bedrooms={property.bedrooms}
+            bathrooms={property.bathrooms}
+            pool={property.pool}
+          />
         ))}
-      {id === undefined && <PropertyView data={id} />}
     </Container>
   )
 }
 
-export default SellView
+export default RentView
