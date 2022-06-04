@@ -11,15 +11,20 @@ function DynamicPage() {
 
   const cleanRouter = router.asPath.slice(1).split("/")
   const idOfProperty = parseInt(cleanRouter[1], 10)
-
-  const property = properties.filter(
-    (p: PropertyExcelInterface) => p.id === idOfProperty,
-  )
+  let property
+  if (idOfProperty !== undefined) {
+    property = properties.filter(
+      (p: PropertyExcelInterface) => p.id === idOfProperty,
+    )
+  }
 
   return (
     <>
       <Navbar />
-      <PropertyView data={property[0]} />
+      {property !== undefined && property.length > 0 && (
+        <PropertyView data={property[0]} />
+      )}
+
       <Footer />
     </>
   )
